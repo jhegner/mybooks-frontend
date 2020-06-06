@@ -1,0 +1,26 @@
+{
+  "name": "mybooks-frontend",
+  "version": "1.0.0",
+  "description": "MyBooks - Um app simples para controle de livros (frontend)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhegner/mybooks-frontend.git"
+  },
+  "keywords": [
+    "books",
+    "js"
+  ],
+  "author": "jhegner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhegner/mybooks-frontend/issues"
+  },
+  "homepage": "https://github.com/jhegner/mybooks-frontend#readme",
+  "dependencies": {
+    "bulma": "^0.8.2"
+  }
+}
