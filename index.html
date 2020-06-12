@@ -1,41 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MyBooks - Um app simples para controle de livros</title>
-    <link rel="stylesheet" href="./build/css/main.css">
-    <link rel="stylesheet" href="/path/to/reset-css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<nav class="nav">
-    <div>
-        <span>MyBooks</span>
-    </div>
-</nav>
-<main>
-    <div>
-        <form action="#">
-            <div>
-                <label for="email_telefone">E-mail ou Telefone</label>
-                <input type="text" name="email_telefone" required>
-            </div>
-            <div>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" required>
-            </div>
-            <div>
-                <button>
-                    Entrar
-                </button>
-            </div>
-        </form>
-    </div>
-</main>
 
 <body>
+    <nav class="navbar is-white is-spaced">
+        <div class="container">
+            <span class="icon">
+                <i class="fas fa-book"></i>
+            </span>
+            <span class="has-text-weight-light">MyBooks</span>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column is-one-third is-offset-4">
+                    <h1 class="title is-4 has-text-centered is-spaced">Login</h1>
+                    <h2 class="subtitle has-text-centered is-6">Seja bem vindo ao app MyBooks</h2>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div class="column is-one-third is-offset-4">
 
+                    <div class="notification is-danger is-light">
+                        <button class="delete"></button>
+                        Nome de usuário ou senha de acesso inválido.
+                    </div>
+
+                    <form action="#" autocomplete="off">
+                        <div class="field">
+                            <label class="label">Digite o nome de usuário</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-danger" type="text" placeholder="E-mail ou telefone">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <p class="help is-danger">Campo obrigatório não preenchido</p>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Senha de acesso</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="password" placeholder="Palavra chave">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button class="button is-info is-fullwidth mt-2">Entrar</button>
+                        </div>
+                        <div class="control">
+                            <p class="has-text-centered pb-3">ou</p>
+                        </div>
+                        <div class="control">
+                            <button class="button is-info is-fullwidth mt-2">
+                                <span class="icon is-small">
+                                    <i class="fab fa-google"></i>
+                                </span>
+                                <span>
+                                    Entrar com o Google
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
